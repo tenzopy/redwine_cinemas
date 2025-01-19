@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: tenzopy_website
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./redwine_cinemas/:/var/www/html:ro
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    restart: unless-stopped
