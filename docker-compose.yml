@@ -3,7 +3,7 @@ version: '3'
 services:
   nginx:
     image: nginx:latest
-    container_name: tenzopy_website
+    container_name: redwine_website
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./redwine_cinemas/:/var/www/html:ro
