@@ -3,6 +3,12 @@
 
 <head>
   <title>Redwine Cinemas &mdash; Varkala</title>
+  <meta name="description"
+    content="Redwine Cinemas - Wedding Cinematography and Photography in Varkala, Kerala. Capturing timeless moments with elegance and soul.">
+  <meta name="keywords"
+    content="Redwine Cinemas, wedding photography, Varkala wedding, cinematic video, Kerala weddings, event videography">
+  <meta name="author" content="Redwine Cinemas">
+  <link rel="canonical" href="https://redwinecinemas.in/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,29 +16,119 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
   <link rel="stylesheet" href="css/lightgallery.min.css">
-
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
   <link rel="stylesheet" href="css/swiper.css">
-
   <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Particle.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+  <style>
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+      background: #000;
+      color: white;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease-in-out;
+      transition: transform 0.2s ease;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+      animation: fadeInUp 1.2s ease-in-out;
+      transition: transform 0.2s ease;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery-button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .gallery-button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #tsparticles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .intro-section {
+      padding: 4rem 1rem;
+    }
+
+    .intro-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 
 <body>
-
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -44,176 +140,82 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
-
-
     <header class="site-navbar py-3" role="banner">
-
       <div class="container-fluid">
         <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0">
-              <a href="/" class="text-red h2 mb-0">Redwine</a>
-            </h1>
+          <div class="col-6 col-xl-2 d-flex align-items-center" data-aos="fade-down">
+            <a href="/">
+              <img src="images/redwine.png" alt="Redwine Logo" class="logo-img mr-2">
+            </a>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
-
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="/">Home</a></li>
-                <li>
-                  <a href="/gallery">Gallery</a>
-                </li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </nav>
           </div>
-
           <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <!-- <li>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                </li> -->
                 <li>
                   <a href="https://www.instagram.com/redwine_cinemas/" class="pl-3 pr-3"><span
                       class="icon-instagram"></span></a>
                 </li>
-                <!-- <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-youtube-play"></span></a>
-                </li> -->
               </ul>
             </div>
-
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
-                class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </header>
-
-
-
-    <div class="site-section" data-aos="fade">
-      <div class="container-fluid">
-
-        <div class="row justify-content-center">
-
-          <div class="col-md-7">
-            <div class="row mb-5">
-              <div class="col-12 ">
-                <h2 class="site-section-heading text-center">Welcome to the world of <span
-                    class="text-cyan">Photography!
-                  </span>
-                </h2>
-              </div>
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+              <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
             </div>
           </div>
-
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-md-7">
-            <img src="images/redwine.png" alt="Images" class="img-fluid">
-          </div>
-          <div class="col-md-4 ml-auto"><br><br>
-            <h3 class="text-white">At <span class="text-red">Redwine Cinemas</span></h3>
-            <p>we believe
-              that every wedding is a beautiful
-              story waiting to be told. With over
-              five years of experience in wedding
-              photography, we specialize in
-              preserving the raw emotions,
-              intimate moments, and timeless
-              beauty of your special day. Our
-              passion lies in creating a visual
-              narrative that you can cherish for a
-              lifetime.</p>
-            <p>Founded in 2019, Redwine Cinemas
-              has grown into a trusted name in
-              wedding photography. We are a
-              team of professional photographers,
-              videographers and creatives who
-              share a deep love for capturing the
-              essence of love stories. Our founder
-              <span class="text-cyan">SHANU VARKALA</span>, who has an
-              experience of more than 15 years in
-              the field and the team ensures a
-              blend of artistic vision, technical
-              expertise, and an unobtrusive
-              approach, we ensure every candid
-              smile and heartfelt glance is
-              immortalized in stunning detail.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="row site-section justify-content-center align-items-center">
-          <!-- <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati
-              non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque
-              tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
-          </div> -->
-          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_4.png" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-cyan font-weight-light mb-4">Shanu Varkala</h2>
-            <p class="mb-4">I have an experience of more than 15 years in the field and the team ensures a blend of
-              artistic vision, technical expertise, and an unobtrusive approach, we ensure every candid smile and
-              heartfelt glance is immortalized in stunning detail.</p>
-            <p>
-              <a href="https://www.instagram.com/shanu_varkala_photography/" class="pl-3 pr-3"><span
-                  class="icon-instagram"></span></a>
-            </p>
-          </div>
-          <!-- <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">John Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati
-              non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque
-              tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
-          </div> -->
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="footer py-4">
+    <section class="hero-section">
+      <div id="tsparticles"></div>
+      <div class="hero-content">
+        <h1 class="parallax-text" data-depth="0.3">Welcome to<strong class="text-red"> Redwine Cinemas</strong></h1>
+        <p class="parallax-text" data-depth="0.6">Capturing the beauty of your moments with elegance and soul.</p>
+        <a href="/gallery" class="gallery-button">View Gallery</a>
+      </div>
+    </section>
+
+    <section class="intro-section" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="text-cyan">Telling Your Story Through Our Lens</h2>
+            <p>At <strong class="text-red">Redwine Cinemas</strong>, every wedding, event, and shoot is a story waiting
+              to be told. With over five years of experience, we preserve the beauty and emotion of your special day
+              with stunning detail and heartfelt creativity.</p>
+            <p>Led by our founder <strong class="text-cyan">Shanu Varkala</strong> with 15+ years of expertise, our team
+              blends art, technique, and an unobtrusive approach to capture every precious moment seamlessly.</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/wedding/wedding_1.png" class="img-fluid rounded" alt="wedding">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-4">
       <div class="container-fluid text-center">
         <p>
           Copyright &copy;
           <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-          <script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i
-            class="icon-heart-o" aria-hidden="true"></i> by <a href="https://tenzopy.com" target="_blank">Tenzopy</a>
+          <script>document.write(new Date().getFullYear());</script>
+          All rights reserved | Made with <i class="icon-heart-o" aria-hidden="true"></i> by
+          <a href="https://tenzopy.com" target="_blank">Tenzopy</a>
         </p>
       </div>
-    </div>
-
-
-
-
-
+    </footer>
   </div>
 
+  <!-- JS Scripts -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -226,19 +228,85 @@
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/aos.js"></script>
-
   <script src="js/picturefill.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>
-
   <script src="js/main.js"></script>
 
+  <!-- Hero Section Scripts -->
   <script>
-    $(document).ready(function () {
-      $('#lightgallery').lightGallery();
+    AOS.init();
+
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: {
+        color: {
+          value: "#000000"
+        }
+      },
+      fpsLimit: 60,
+      particles: {
+        color: {
+          value: "#ffffff"
+        },
+        links: {
+          color: "#ffffff",
+          distance: 150,
+          enable: true,
+          opacity: 0.3,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          outModes: "out"
+        },
+        number: {
+          value: 50,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        opacity: {
+          value: 0.5
+        },
+        shape: {
+          type: "circle"
+        },
+        size: {
+          value: { min: 1, max: 3 }
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          }
+        }
+      },
+      detectRetina: true
+    });
+
+    // Parallax effect for text
+    document.addEventListener('mousemove', function (e) {
+      document.querySelectorAll('.parallax-text').forEach(el => {
+        const depth = el.getAttribute('data-depth');
+        const x = (window.innerWidth - e.pageX * depth) / 100;
+        const y = (window.innerHeight - e.pageY * depth) / 100;
+        el.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
     });
   </script>
-
 </body>
 
 </html>

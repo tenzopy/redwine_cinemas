@@ -219,6 +219,21 @@
 
 
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const gallery = document.getElementById("lightgallery");
+      const items = Array.from(gallery.children);
+
+      // Fisher-Yates Shuffle
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+
+      // Append shuffled items back to the gallery
+      items.forEach(item => gallery.appendChild(item));
+    });
+  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
